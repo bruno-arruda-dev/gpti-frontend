@@ -1,4 +1,5 @@
 import BarraLateral from '../../components/BarraLateral/BarraLateral';
+import BarraSuperior from '../../components/BarraSuperior/BarraSuperior';
 import './Contatos.scss';
 
 function Contatos() {
@@ -7,7 +8,7 @@ function Contatos() {
       <BarraLateral />
       <div className='contatos'>
         <BarraSuperior>
-          Conteúdo da barra superior aqui
+          <h1>Contatos</h1>
         </BarraSuperior>
         Contatos
       </div>

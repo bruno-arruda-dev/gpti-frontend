@@ -8,7 +8,7 @@ function Principal() {
       <BarraLateral />
       <div className='principal'>
         <BarraSuperior>
-          Conteúdo da barra superior aqui
+          <h1>Principal</h1>
         </BarraSuperior>
         Principal
       </div>
