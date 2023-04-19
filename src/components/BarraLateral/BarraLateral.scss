@@ -1,0 +1,15 @@
+@import '../../App.scss';
+
+.barraLateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: $compensa-barra-lateral;
+    background-color: red;
+
+    &:hover {
+        min-width: 20%;
+    }
+
+}

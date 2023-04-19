@@ -1,10 +1,14 @@
+import BarraLateral from '../../components/BarraLateral/BarraLateral';
 import './Produtos.scss';
 
 function Produtos() {
   return (
-    <div>
-      Produtos
-    </div>
+    <>
+      <BarraLateral />
+      <div className='produtos'>
+        Produtos
+      </div>
+    </>
   );
 }
 
