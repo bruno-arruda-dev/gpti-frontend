@@ -1,10 +1,9 @@
-import React from 'react';
+import './Principal.scss';
 
 function Principal() {
   return (
     <div className='principal'>
-      <h1>Página Principal</h1>
-      <p>Principal</p>
+      Principal
     </div>
   );
 }

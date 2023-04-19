@@ -1,7 +1,5 @@
-import './App.css';
+import './App.scss';
 import Rotas from './routes/Rotas';
-import Principal from './pages/Principal/Principal';
-import Login from './pages/Login/Login';
 
 function App() {
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import './Produtos.scss';
 
 function Produtos() {
   return (

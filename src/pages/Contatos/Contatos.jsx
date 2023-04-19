@@ -1,4 +1,4 @@
-import './Contatos.css';
+import './Contatos.scss';
 
 function Contatos() {
   return (
