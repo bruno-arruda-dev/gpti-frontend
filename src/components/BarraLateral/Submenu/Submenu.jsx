@@ -1,11 +1,16 @@
-import React from 'react';
+import './Submenu.scss';
 
-function Submenu({texto, icone}) {
-  return (
-    <div className='submenu'>
-      <h4>{texto}</h4>
-    </div>
-  );
+function Submenu({ texto, icone }) {
+    return (
+
+        <div className='submenu'>
+
+            <div className={`submenu-icone ${icone}`} />
+            <h4 className='submenu-texto'>{texto}</h4>
+
+        </div>
+
+    );
 }
 
 export default Submenu;

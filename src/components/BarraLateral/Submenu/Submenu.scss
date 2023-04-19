@@ -1,0 +1,38 @@
+@import '../../../App.scss';
+
+.submenu {
+    display: flex;
+
+    .submenu-icone {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .cadastro {
+        background-image: url('../../../assets/icones/cadastro.png');
+    }
+
+    .venda {
+        background-image: url('../../../assets/icones/venda.png');
+    }
+
+    .produtos {
+        background-image: url('../../../assets/icones/produtos.png');
+    }
+
+    .financeiro {
+        background-image: url('../../../assets/icones/financeiro.png');
+    }
+
+    .relatorios {
+        background-image: url('../../../assets/icones/relatorios.png');
+    }
+
+    .sistema {
+        background-image: url('../../../assets/icones/sistema.png');
+    }
+
+}

@@ -8,12 +8,12 @@ function BarraLateral() {
 
       </div>
       <div className='barraLateral-conteudo'>
-        <Submenu texto="Cadastro" />
-        <Submenu texto="Venda" />
-        <Submenu texto="Produto" />
-        <Submenu texto="Financeiro" />
-        <Submenu texto="Relatório" />
-        <Submenu texto="Sistema" />
+        <Submenu texto="Cadastro" icone="cadastro" />
+        <Submenu texto="Venda" icone="venda" />
+        <Submenu texto="Produtos" icone="produtos" />
+        <Submenu texto="Financeiro" icone='financeiro' />
+        <Submenu texto="Relatórios" icone='relatorios' />
+        <Submenu texto="Sistema" icones='sistema' />
       </div>
       <div className='barraLateral-rodape'>
 
