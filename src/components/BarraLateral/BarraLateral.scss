@@ -7,13 +7,14 @@
     height: 100vh;
     width: $compensa-barra-lateral;
     background-color: $cor-principal;
-    padding: 10px;
     color: white;
     font-weight: bold;
 
     
     &:hover {
-        min-width: 20%;
+        min-width: 15%;
+        width: fit-content;
+
         .submenu-texto {
             display: flex;
         }
@@ -22,7 +23,6 @@
     .barraLateral-cabecalho {
         width: 100%;
         height: 20%;
-        background-color: blue;
     }
     
     .barraLateral-conteudo {
@@ -40,8 +40,7 @@
 
     .barraLateral-rodape {
         width: 100%;
-        height: 60%;
-        background-color: blue;
+        height: 20%;
     }
 
 }

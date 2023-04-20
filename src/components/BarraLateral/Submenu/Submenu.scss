@@ -2,6 +2,16 @@
 
 .submenu {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        background-color: $cor-secundaria;
+    }
 
     .submenu-icone {
         background-repeat: no-repeat;
@@ -10,28 +20,32 @@
         width: 25px;
         height: 25px;
     }
+
+    .submenu-texto {
+        margin-left: 5%;
+    }
     
-    .cadastro {
+    .icone-cadastro {
         background-image: url('../../../assets/icones/cadastro.png');
     }
 
-    .venda {
-        background-image: url('../../../assets/icones/venda.png');
+    .icone-vendas {
+        background-image: url('../../../assets/icones/vendas.png');
     }
 
-    .produtos {
+    .icone-produtos {
         background-image: url('../../../assets/icones/produtos.png');
     }
 
-    .financeiro {
+    .icone-financeiro {
         background-image: url('../../../assets/icones/financeiro.png');
     }
 
-    .relatorios {
+    .icone-relatorios {
         background-image: url('../../../assets/icones/relatorios.png');
     }
 
-    .sistema {
+    .icone-sistema {
         background-image: url('../../../assets/icones/sistema.png');
     }
 
