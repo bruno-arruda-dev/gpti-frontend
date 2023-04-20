@@ -9,6 +9,12 @@ O GPTI-Frontend utiliza as seguintes tecnologias:
 - React: Uma biblioteca JavaScript para a criação de interfaces de usuário reativas e componentes reutilizáveis.
 - Javascript: Uma linguagem de programação amplamente utilizada para desenvolvimento web.
 - DART SASS: Um pré-processador de CSS que permite escrever código CSS mais eficiente, modular e reutilizável.
+- react-router-dom: Tecnologia utilizada para roteamento de URLs em aplicações REACT.
+
+## Tecnologias que serão implementadas
+
+- Linguagem Typescript: Linguagem de programação baseada em Javascript, capaz de adicionar muitos recursos úteis à linguagem original.
+- REACT Hooks: Oferecem uma forma mais concisa e eficiente para gerenciar estados e ciclo de vida dos componentes em aplicações REACT.
 
 ## Como executar o projeto
 
