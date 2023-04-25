@@ -1,8 +1,18 @@
 export const ListaEmpresas = [
     {
-        1 : "Integra Engenharia De Sistemas",
-        2 : "Roça Brazabrantes",
-        3 : "Centro Automotivo Integra",
-        4 : "Grupo GPTI"
+        id: 1,
+        nome: "Integra Engenharia De Sistemas"
+    },
+    {
+        id: 2,
+        nome: "Roça Brazabrantes"
+    },
+    {
+        id: 3,
+        nome: "Centro Automotivo Integra"
+    },
+    {
+        id: 4,
+        nome: "Grupo GPTI"
     }
-]
+];

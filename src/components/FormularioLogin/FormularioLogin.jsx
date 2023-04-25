@@ -9,7 +9,6 @@ function FormularioLogin() {
     //Função responsável por enviar usuário e senha digitados para verificação
     const handleLogin = () => {
         console.log("Clicou no botão Entrar");
-        console.log(`Enviando senha: ${senha}`);
         VERIFICA_LOGIN_SENHA(login, senha);
     };
 
@@ -22,7 +21,7 @@ function FormularioLogin() {
                         <input 
                             type='text' 
                             value={login}
-                            onChange={(e) => setLogin(e.target.value)}
+                            onChange={(e) => setLogin(e.target.value.toLocaleUpperCase())}
                             required 
                         />
                     </div>
@@ -30,7 +29,7 @@ function FormularioLogin() {
                         <input 
                             type='password'
                             value={senha}
-                            onChange={(e) => setSenha(e.target.value)}
+                            onChange={(e) => setSenha(e.target.value.toUpperCase())}
                             required 
                         />
                     </div>

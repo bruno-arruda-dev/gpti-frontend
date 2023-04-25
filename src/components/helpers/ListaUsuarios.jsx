@@ -1,9 +1,12 @@
+// Gravar usuário e senha para testes com letras maiúsculas
+// O frontend está convertendo tudo o que é digitado nos campos de login e senha para maiúsculo.
+
 export const ListaUsuarios = [
     {
         id: 1,
         usuario: "BRUNO",
         senha: "SUPER",
-        empresas: [1, 3]
+        empresas: []
     },
     {
         id: 2,
