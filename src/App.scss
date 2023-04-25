@@ -1,8 +1,19 @@
 // Variáveis Globais
+// Cores para background
 $cor-principal: #293E4D;
 $cor-secundaria: #c23235;
+$cor-detalhe: #fc7e09;
 
-// Tamanho da margem para compensar o recuo da barra lateral
+// Cores para textos
+$cor-texto-clara: #ffffff;
+$cor-texto-escura: #3a3a3a;
+
+// Arredondamento de bordas
+$arredondamento-borda-padrao: 10px;
+
+// Tamanho da margem para compensar
+// o recuo das barras laterais
+$compensa-barra-principal: 20%;
 $compensa-barra-lateral: 50px;
 $compensa-barra-superior: 70px;
 
