@@ -1,7 +1,7 @@
 import { ListaUsuarios } from "../components/helpers/ListaUsuarios";
 import { ListaEmpresas } from "../components/helpers/ListaEmpresas";
 
-const VERIFICA_LOGIN_SENHA = ( login, senha, callbackUsuario, callbackEmpresas ) => {
+const VERIFICA_LOGIN_SENHA = ( login, senha, callbackUsuario, callbackEmpresas, callbackIsLogado ) => {
     console.log(`Rotina de verificação de login e senha`);
     console.log(`verificando usuário...`);
     const usuario = ListaUsuarios.find(usuario => usuario.usuario === login);
@@ -26,6 +26,8 @@ const VERIFICA_LOGIN_SENHA = ( login, senha, callbackUsuario, callbackEmpresas )
 
             callbackUsuario(usuario.usuario);
             callbackEmpresas(empresasAutorizadas);
+            callbackIsLogado(true);
+            
 
         } else {
             console.log(`Senha incorreta!`);

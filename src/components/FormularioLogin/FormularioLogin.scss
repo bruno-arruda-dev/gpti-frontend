@@ -24,6 +24,7 @@
             margin: 50px;
             position: relative;
             border-radius: $arredondamento-borda-padrao;
+            box-shadow: $sombra-padrao;
 
             .inputContainer {
                 input {
@@ -87,6 +88,7 @@
             width: 150px;
             height: 40px;
             transition: all 0.2s ease-in-out;
+            box-shadow: $sombra-padrao;
 
             &:hover {
                 transform: scale(1.1);
