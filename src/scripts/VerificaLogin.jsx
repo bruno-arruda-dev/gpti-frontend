@@ -1,14 +1,9 @@
 import { ListaUsuarios } from "../components/helpers/ListaUsuarios";
 import { ListaEmpresas } from "../components/helpers/ListaEmpresas";
 
-const VERIFICA_LOGIN_SENHA = (login, senha) => {
+const VERIFICA_LOGIN_SENHA = ( login, senha, callbackUsuario, callbackEmpresas ) => {
     console.log(`Rotina de verificação de login e senha`);
-    VERIFICA_LOGIN(login, senha);
-}
-
-const VERIFICA_LOGIN = (login, senha) => {
     console.log(`verificando usuário...`);
-
     const usuario = ListaUsuarios.find(usuario => usuario.usuario === login);
 
     if (usuario) {
@@ -24,12 +19,13 @@ const VERIFICA_LOGIN = (login, senha) => {
             const empresasAutorizadas = empresasDoUsuario.map(empresaId => {
                 // Encontra a empresa correspondente ao ID no array ListaEmpresas
                 const empresa = ListaEmpresas.find(empresa => empresa.id === empresaId);
-            
+
                 // Retorna o nome da empresa encontrada
                 return empresa ? empresa.nome : null;
             });
-            
-            console.log(empresasAutorizadas);
+
+            callbackUsuario(usuario.usuario);
+            callbackEmpresas(empresasAutorizadas);
 
         } else {
             console.log(`Senha incorreta!`);
