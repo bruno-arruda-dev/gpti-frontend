@@ -10,11 +10,24 @@ function FormularioLogin() {
     } = useContext(SessionContext);
     const [login, setLogin] = useState(""); // Estado que armazena o login digitado
     const [senha, setSenha] = useState(""); // Estado que armazena a senha digitada
+    const [loginVazio, setLoginVazio] = useState(""); // Armazena estado de login vazio
+    const [senhaVazia, setSenhaVazia] = useState(""); // Armazena estado de senha vazia
 
     //Função responsável por enviar usuário e senha digitados para verificação
     const handleLogin = () => {
         console.log("Clicou no botão Entrar");
-        VERIFICA_LOGIN_SENHA(login, senha, handleCallbackUsuario, handleCallbackEmpresas, handleCallbackIsLogado);
+
+        if ( login === "" ) {
+            setLoginVazio("loginVazio");
+            if ( senha === "" ) {
+                setSenhaVazia("senhaVazia");
+            }
+        } else if ( senha === "" ) {
+            setSenhaVazia("senhaVazia");
+        } else {
+            VERIFICA_LOGIN_SENHA(login, senha, handleCallbackUsuario, handleCallbackEmpresas, handleCallbackIsLogado);
+        };
+
     };
 
     // Atualiza o estado global com o usuário logado
@@ -35,25 +48,37 @@ function FormularioLogin() {
         }
     }
 
+    // Verifica se Login está vazio
+    const handleChangeLogin = (e) => {
+        setLogin(e.target.value.toUpperCase());
+        setLoginVazio("");
+    }
+
+    // Verifica se a senha está vazia
+    const handleChangeSenha = (e) => {
+        setSenha(e.target.value.toUpperCase());
+        setSenhaVazia("");
+    }
+
     return (
         <div className='formularioLogin'>
             <ModalEscolherEmpresa usuario={usuarioSessao} empresas={empresasSessao} mostrar={isLogado} setIsLogado={setIsLogado} />
             <h2>Bem vindo ao GPTI</h2>
             <div className='form'>
                 <div className='dadosContainer'>
-                    <div className='inputContainer usuario'>
+                    <div className={`inputContainer usuario ${loginVazio}`}>
                         <input
                             type='text'
                             value={login}
-                            onChange={(e) => setLogin(e.target.value.toLocaleUpperCase())}
+                            onChange={(e) => handleChangeLogin(e)}
                             required
                         />
                     </div>
-                    <div className='inputContainer senha'>
+                    <div className={`inputContainer senha ${senhaVazia}`}>
                         <input
                             type='password'
                             value={senha}
-                            onChange={(e) => setSenha(e.target.value.toUpperCase())}
+                            onChange={(e) => handleChangeSenha(e)}
                             required
                         />
                     </div>

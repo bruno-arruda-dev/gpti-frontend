@@ -26,7 +26,17 @@
             border-radius: $arredondamento-borda-padrao;
             box-shadow: $sombra-padrao;
 
+            // Login ou senha vazios apresentará este estilo
+            .loginVazio,
+            .senhaVazia {
+                border: 2px solid $cor-secundaria;
+                border-radius: $arredondamento-borda-padrao;
+                animation: shake 0.2s;
+            }
+
             .inputContainer {
+                
+
                 input {
                     height: 40px;
                     width: 300px;
